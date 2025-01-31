@@ -2,11 +2,17 @@
 
 import SimpleLightbox from 'simplelightbox';
 import 'simplelightbox/dist/simple-lightbox.min.css';
-
+import { fatchCard } from "./js/pixabay-api"
 
 const loader = document.querySelector('.loader');
-
-
+ 
+async function renderCard () {
+  try {
+    const response = await fatchCard(1)
+  } catch (error) {
+    console.log(error);
+  }
+}
 
 
 export const createMarkup = results => {
@@ -51,6 +57,12 @@ export const createMarkup = results => {
     })
     .join('');
 };
+
+
+
+
+
+
 //*** SimpleLightbox */
 export const lightbox = new SimpleLightbox('.gallery-item', {
     captionsData: 'alt',
