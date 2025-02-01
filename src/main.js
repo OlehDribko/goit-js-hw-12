@@ -1,7 +1,7 @@
 import iziToast from "izitoast";
 import "izitoast/dist/css/iziToast.min.css";
 
-import { fetchImages } from "./js/pixabay-api";
+import { fetchImages } from "./js/pixabay-api.js";
 import {
   createMarkup,
   updateGallery,
@@ -11,7 +11,7 @@ import {
   refreshLightbox,
   showLoader,
   hideLoader,
-} from "./js/render-functions";
+} from "./js/render-functions.js";
 
 const form = document.querySelector(".searchForm");
 const postsList = document.querySelector(".card-list");
