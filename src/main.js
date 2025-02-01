@@ -51,12 +51,7 @@ form.addEventListener("submit", async (event) => {
 
     
     if (data.hits.length === 0 && page === 1) {
-      iziToast.warning({
-        title: "Нічого не знайдено!",
-        message: "Спробуйте змінити параметри пошуку.",
-        position: "topRight",
-        timeout: 3000,
-      });
+      
       return updateGallery(postsList, "");
     }
 
