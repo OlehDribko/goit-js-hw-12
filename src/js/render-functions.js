@@ -57,7 +57,7 @@ export function scrollToNextPage() {
 export function showEndMessage() {
    iziToast.info({
     title: "Вибірка завершена",
-    message: "Ви досягли кінця результатів пошуку.",
+    message: "We're sorry, but you've reached the end of search results.",
     position: "topRight",
     timeout: 4000,
   });
